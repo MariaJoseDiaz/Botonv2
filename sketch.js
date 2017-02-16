@@ -1,13 +1,11 @@
 var fondo;
 
- var widht = 400
- var height = 400
   var a;
   var b;
   var c;
 
-  var rect_widht = 60;
-  var rect_height = 10;
+  var rect_widht;
+  var rect_height;
   
 function setup () {
   createCanvas(windowWidth, windowHeight);
@@ -37,6 +35,9 @@ function draw () {
   a = (width/8)*2
   b = ((height/15)*14)-3
   c = (width/8)*6
+ 
+  rect_widht = (widht/7)
+  rect_height = (height/35)
 
   
   //

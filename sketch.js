@@ -23,11 +23,6 @@ var tryagain
   var rect_widht;
   var rect_height;
   
-function setup () {
-  createCanvas(windowWidth, windowHeight);
-  fondo = color(204);
- // createButton("Change Background");
-}
 
 function preload() {
     //cover = createImg("gif.gif");
@@ -36,6 +31,13 @@ function preload() {
     myImage2 = loadImage("prova2.jpg");
     fontTitle = loadFont("OCRBStd.otf");
 }
+
+function setup () {
+  createCanvas(windowWidth, windowHeight);
+  fondo = color(204);
+ // createButton("Change Background");
+}
+
 
 function mousePressed () {
   //if touches[x, y, rect_widht, rect_height]

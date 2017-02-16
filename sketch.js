@@ -45,14 +45,16 @@ function mousePressed () {
  fondo = color(random(0, 170), random(0, 170), random(0, 170));
   
 
- // if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height)
- //fondo = color(204);
+  if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height)
+ fondo = color(random(0, 170), random(0, 170), random(0, 170)); 
+    //fondo = color(204);
     //  energy = 0;
 }
 
 function draw () {
   background(fondo);
   
+  /*
       var magnitude = int(map(energy, 0, 1000, 0, 10)); 
     
      if (energy < 0.5) {
@@ -62,6 +64,7 @@ function draw () {
   
      } 
     else if (energy > 0.5 && energy < maxEnergy){
+    */
 
  // rectMode(CENTER); 
  // rect(x,x,rect_widht,rect_height)

@@ -47,8 +47,8 @@ function mousePressed () { // function touchStarted () {
   
   if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
  fondo = color(random(0, 170), random(0, 170), random(0, 170));
-   else (magnitude <= 6){
-         image(myImage1,0,0,windowWidth,windowHeight);
+   // else (magnitude <= 6){
+  //       image(myImage1,0,0,windowWidth,windowHeight);
    // } else {
      //    image(myImage2,0,0,windowWidth,windowHeight);
 

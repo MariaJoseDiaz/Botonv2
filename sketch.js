@@ -168,7 +168,7 @@ function draw () {
       }
  
 }
- /*
+
 
 function deviceShaken(){
     
@@ -222,7 +222,6 @@ function QuakeDots(){
   
  }
 
-*/
 
 function clearEverything() {
     background(204);

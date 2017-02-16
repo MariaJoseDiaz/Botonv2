@@ -12,6 +12,10 @@ var cover;
 
 var myImage1;
 var myImage2;
+var myImage3;
+var myImage4;
+var myImage5;
+var myImage6;
 
 var fontTitle;
 var fontMeta;
@@ -28,7 +32,7 @@ var tryagain;
   
 
 function preload() {
-    //cover = createImg("gif.gif");
+    //cover = createImg("gif.gif");  // I found that for gif we have to use "create"
     cover = loadImage("Tavola disegno 18-100.jpg");
     myImage1 = loadImage("prova1.png");
     myImage2 = loadImage("prova2.jpg");
@@ -40,20 +44,84 @@ function preload() {
 function setup () {
   createCanvas(windowWidth, windowHeight);
   fondo = color(204);
- // createButton("Change Background");
 }
 
 
 function mousePressed () { // function touchStarted () {
   //if touches[x, y, rect_widht, rect_height]
  // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
+ 
   
   if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
  fondo = color(random(0, 170), random(0, 170), random(0, 170));
+    
    // else (magnitude <= 6){
   //       image(myImage1,0,0,windowWidth,windowHeight);
    // } else {
      //    image(myImage2,0,0,windowWidth,windowHeight);
+    
+    
+    /*
+    
+    //opcion 1
+    for var fondo {
+    if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
+   
+   }else if (magnitude <= 6) {
+        image(myImage1,0,0,windowWidth,windowHeight);
+  
+   }if(mangnitude => 6 && < 7) {
+        image(myImage2,0,0,windowWidth,windowHeight);   
+        
+   }if(mangnitude => 7 && < 8) {
+        image(myImage3,0,0,windowWidth,windowHeight);  
+        
+   }if(mangnitude => 8 && < 9) {
+        image(myImage4,0,0,windowWidth,windowHeight);  
+        
+   }if(mangnitude => 9 && < 10) {
+        image(myImage5,0,0,windowWidth,windowHeight);  
+        
+   }if(mangnitude => 10 &&) {
+        image(myImage6,0,0,windowWidth,windowHeight); 
+        
+        
+        // otra opcion2
+        
+        for (var fondo = myImage1) {
+        if (magnitude <= 6);
+        } else if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height);
+        }
+        
+        for (var fondo = myImage2) {
+        if (mangnitude => 6 && < 7);
+        } else if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height);
+        }
+        
+        for (var fondo = myImage3) {
+        if (mangnitude => 7 && < 8);
+        } else if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height);
+        }
+        
+        for (var fondo = myImage4) {
+        if (mangnitude => 8 && < 9);
+        } else if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height);
+        }
+        
+        for (var fondo = myImage5) {
+        if (mangnitude => 9 && < 10);
+        } else if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height);
+        }
+        
+        for (var fondo = myImage6) {
+        if (mangnitude => 10);
+        } else if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height);
+        }
+        
+ 
+    
+    
+    */
 
 } else if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
     fondo = color(204);
@@ -76,10 +144,6 @@ function draw () {
      } 
     else if (energy > 0.5 && energy < maxEnergy){
    
-
- // rectMode(CENTER); 
- // rect(x,x,rect_widht,rect_height)
-  
   
   a = (width/8)*2
   b = ((height/15)*14)-3
@@ -142,9 +206,6 @@ function draw () {
     rect(((width/8)*6)-30, ((height/15)*14)-8, rect_widht, rect_height);
 
 
-
- 
-// translate ellipse
    
        //CREATE THE ELLIPSE AREA
     var x = width/2;
@@ -219,7 +280,7 @@ function QuakeDots(){
 }
 
 
- 
+ /*
     // result buttons
  function results() {
      if (magnitude <= 6){
@@ -236,6 +297,7 @@ function clearEverything() {
     energy = 0;
  }
  
+ */
 
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);

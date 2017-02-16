@@ -49,10 +49,11 @@ function mousePressed () { // function touchStarted () {
  fondo = color(random(0, 170), random(0, 170), random(0, 170));
   
 
-  if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height)
+  if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
  //fondo = color(random(0, 170), random(0, 170), random(0, 170)); 
     fondo = color(204);
     energy = 0;
+  }
 }
 
 function draw () {

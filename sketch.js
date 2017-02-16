@@ -134,6 +134,7 @@ function draw () {
     rect(((width/8)*6)-30, ((height/15)*14)-8, rect_widht, rect_height);
 
 
+  /*
 // translate ellipse
    
        //CREATE THE ELLIPSE AREA
@@ -219,7 +220,7 @@ function QuakeDots(){
   
  }
 
-/*
+
 function clearEverything() {
     background(204);
     energy = 0;

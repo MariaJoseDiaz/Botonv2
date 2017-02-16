@@ -45,11 +45,11 @@ function mousePressed () { // function touchStarted () {
   //if touches[x, y, rect_widht, rect_height]
  // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
   
-  if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height)
+  if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
  fondo = color(random(0, 170), random(0, 170), random(0, 170));
   
 
-  if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
+} else if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
  //fondo = color(random(0, 170), random(0, 170), random(0, 170)); 
     fondo = color(204);
     energy = 0;

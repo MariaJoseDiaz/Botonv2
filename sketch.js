@@ -133,9 +133,9 @@ function draw () {
     stroke(255);
     rect(((width/8)*6)-30, ((height/15)*14)-8, rect_widht, rect_height);
 
-} //borrar despues
 
-  /*
+
+ 
 // translate ellipse
    
        //CREATE THE ELLIPSE AREA
@@ -168,6 +168,7 @@ function draw () {
       }
  
 }
+ /*
 
 function deviceShaken(){
     
@@ -221,13 +222,13 @@ function QuakeDots(){
   
  }
 
+*/
 
 function clearEverything() {
     background(204);
     energy = 0;
  }
- */
-
+ 
 
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);

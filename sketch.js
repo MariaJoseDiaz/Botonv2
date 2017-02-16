@@ -15,8 +15,8 @@ var myImage2;
 
 var fontTitle;
 
-var seeresults
-var tryagain
+var seeresults;
+var tryagain;
 
   var a;
   var b;
@@ -133,6 +133,7 @@ function draw () {
     stroke(255);
     rect(((width/8)*6)-30, ((height/15)*14)-8, rect_widht, rect_height);
 
+} //borrar despues
 
   /*
 // translate ellipse

@@ -1,6 +1,6 @@
 var fondo;
-var widht;
-var height;
+var widht = 400;
+var height = 400;
 
 var dots = [];
 var energy = 0; //starting value of energy

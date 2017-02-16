@@ -58,7 +58,7 @@ function mousePressed () { // function touchStarted () {
 function draw () {
   background(fondo);
   
-  /*
+ 
       var magnitude = int(map(energy, 0, 1000, 0, 10)); 
     
      if (energy < 0.5) {
@@ -68,7 +68,7 @@ function draw () {
   
      } 
     else if (energy > 0.5 && energy < maxEnergy){
-    */
+   
 
  // rectMode(CENTER); 
  // rect(x,x,rect_widht,rect_height)

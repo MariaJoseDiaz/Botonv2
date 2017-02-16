@@ -14,6 +14,7 @@ var myImage1;
 var myImage2;
 
 var fontTitle;
+var fontMeta;
 
 var seeresults;
 var tryagain;
@@ -32,6 +33,8 @@ function preload() {
     myImage1 = loadImage("prova1.png");
     myImage2 = loadImage("prova2.jpg");
     fontTitle = loadFont("OCRBStd.otf");
+    fontMeta = loadFont("Meta-Normal.otf");
+  
 }
 
 function setup () {
@@ -53,7 +56,6 @@ function mousePressed () { // function touchStarted () {
      //    image(myImage2,0,0,windowWidth,windowHeight);
 
 } else if (mouseX >= c-30 && mouseX <= c-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
- //fondo = color(random(0, 170), random(0, 170), random(0, 170)); 
     fondo = color(204);
     energy = 0;
   }
@@ -67,6 +69,7 @@ function draw () {
     
      if (energy < 0.5) {
    image(cover,0,0,windowWidth,windowHeight);
+       // for gif is:
         // cover.position (0,0);
         // cover.size(windowWidth,windowHeight);
   
@@ -107,12 +110,13 @@ function draw () {
     textSize(height/20);
     textAlign(CENTER);
     textStyle(BOLD);
-    text("1",width/2, height - height/6.7);
+    text(magnitude,width/2, height - height/6.7);
   
 //botones
 
 
 //a y b
+    textFont(fontMeta);
     fill(0);
     noStroke();
     textSize(height/40);
@@ -128,7 +132,7 @@ function draw () {
     
     fill(0);
     noStroke();
-    textSize(height/40);
+  //  textSize(height/40);
     //textAlign(CENTER);
     textStyle(BOLD);
     text("try again",(width/8)*6, (height/15)*14);

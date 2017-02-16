@@ -132,7 +132,7 @@ function draw () {
     
     fill(0);
     noStroke();
-  //  textSize(height/40);
+    textSize(height/40);
     //textAlign(CENTER);
     textStyle(BOLD);
     text("try again",(width/8)*6, (height/15)*14);

@@ -38,7 +38,13 @@ function preload() {
     myImage2 = loadImage("prova2.jpg");
     fontTitle = loadFont("OCRBStd.otf");
     fontMeta = loadFont("Meta-Normal.otf");
-  
+      
+    myImage1 = loadImage("images/Image1.png");
+    myImage2 = loadImage("images/Image2.jpg");
+    myImage3 = loadImage("images/Image3.jpg");
+    myImage4 = loadImage("images/Image4.jpg");
+    myImage5 = loadImage("images/Image5.jpg");
+    myImage6 = loadImage("images/Image6.jpg");
 }
 
 function setup () {
@@ -51,9 +57,27 @@ function mousePressed () { // function touchStarted () {
   //if touches[x, y, rect_widht, rect_height]
  // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
  
+     if ((mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height) && (magnitude <= 6)){
+           image(myImage1,0,0,windowWidth,windowHeight);
+
+      } else if ((mouseX >=a-30 && mouseX <=a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height) && (magnitude=> 6 && magnitude < 7)){
+        image(myImage2,0,0,windowWidth,windowHeight);  
+        
+      } else  if ((mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height) && (magnitude => 7 && magnitude < 8)){
+      image(myImage3,0,0,windowWidth,windowHeight);  
+        
+      } else if ((mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height) && (magnitude => 8 && magnitude < 9)){
+      image(myImage4,0,0,windowWidth,windowHeight); 
+        
+       } else if ((mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height) && (magnitude => 9 && magnitude < 20)){
+      image(myImage5,0,0,windowWidth,windowHeight); 
+      
+      } else if ((mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height) && (magnitude => 10)){
+      image(myImage6,0,0,windowWidth,windowHeight); 
+        
   
-  if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
- fondo = color(random(0, 170), random(0, 170), random(0, 170));
+ // if (mouseX >= a-30 && mouseX <= a-30 + rect_widht && mouseY >= b-8 && mouseY <= b-8 + rect_height){
+// fondo = color(random(0, 170), random(0, 170), random(0, 170));
     
    // else (magnitude <= 6){
   //       image(myImage1,0,0,windowWidth,windowHeight);
